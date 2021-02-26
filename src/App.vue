@@ -3,9 +3,9 @@
     <v-app-bar
         app
     >
-      <div style="
-        padding-left: 1000px;"
-      >John Doe</div>
+      <div style="padding-left: 1000px;">
+        John Doe
+      </div>
     </v-app-bar>
 
     <v-main>
@@ -20,12 +20,13 @@
               height="200"
               width="400"
               elevation="6">
-              <v-avatar
+              <div style="padding: 25px; padding-top: 50px;">
+                <img
+                    class="avatarB"
+                    alt
+                    src="https://cdn.pixabay.com/photo/2020/06/24/19/12/cabbage-5337431_1280.jpg"/>
+              </div>
 
-                color="teal"
-                size="60"
-                rounded
-              > HI </v-avatar>
           </v-card>
           </v-col>
         </v-row>
@@ -39,3 +40,11 @@ export default {
   //
 }
 </script>
+
+<style>
+  .avatarB{
+    border-radius: 60%;
+    width: 60px;
+    height: 60px;
+  }
+</style>
