@@ -35,26 +35,34 @@
               <v-divider></v-divider>
               <div class="infoEdit">
                 <div class="onlypadd">
-                  <div clas="emailInfo">Email</div>
-                    <div class="comboInfos">idade
-                      <div class="cellinfo">celular</div>
+                    <div
+                      class="emailInfo">
+                      thomas_brayan10@hotmail.com
+                    </div>
+                      <div class="comboInfos">20 anos
+                        <div class="cellinfo">(92) 98459-1969</div>
                     </div>
                 </div>
-                <div>
-                  <v-btn fab icon>
-                    <v-icon
-                       color="primary"
-                       x-large
-                       size="40">
-                       mdi-pencil-circle
-                    </v-icon>
+                <div class="buttons">
+                  <v-btn
+                    color="indigo"
+                    icon
+                    small
+                    fab
+                    dark
+                    elevation="3">
+                      <v-icon
+                        fab
+                        dark>
+                        mdi-pencil
+                      </v-icon>
                   </v-btn>
-                 <v-btn
+                  <v-btn
                     fab
                     icon>
                       <v-icon
-                        color="primary">
-                        mdi-dots-vertical
+                         color="primary">
+                         mdi-dots-horizontal
                       </v-icon>
                   </v-btn>
                 </div>
@@ -98,6 +106,7 @@ export default {
     align-content: center;
     align-items: center;
     align-self: center;
+    justify-content: space-between;
   }
   .onlypadd{
     padding-left: 20px;
@@ -108,6 +117,7 @@ export default {
     align-content: center;
     align-items: center;
     align-self: center;
+    opacity: 60%;
   }
   .lastVisual{
     font-size: 14px;
@@ -115,7 +125,14 @@ export default {
   }
   .cellinfo{
     padding-left: 16px;
+    color: grey;
   }
-
+  .emailInfo{
+    color: grey;
+    opacity: 60%;
+  }
+  .buttons{
+    padding-top: 5px;
+  }
 
 </style>
